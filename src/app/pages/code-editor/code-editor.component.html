@@ -1,0 +1,59 @@
+<!-- <div class="container"> -->
+<div class="split-container">
+  <as-split #split direction="horizontal" (dragStart)="dragStartHandler($event)" (dragEnd)="dragEndHandler($event)"
+    (gutterClick)="splitGutterClick($event)">
+    <as-split-area [size]="70" [minSize]="60">
+      <div id="code-editor-aada" class="code-editor">
+        <iframe #code [src]=""></iframe>
+      </div>
+    </as-split-area>
+    <as-split-area [size]="30">
+      <div class=" list-template">
+        <table id="ijm58" class="table table-hover">
+          <thead id="ixyfy-2">
+            <tr id="izckr">
+              <th>#
+              </th>
+              <th id="iimdl">Data
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor=" let template of templateList">
+              <td class="text-primary clickable ">{{template?.id}} </td>
+              <td class="clickable ">
+                <div class="template-view" [innerHtml]="template?.data?.html">
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </as-split-area>
+  </as-split>
+</div>
+<!-- </div> -->
+
+<!-- <iframe #code [src]=""></iframe>
+
+<div class=" list-template">
+  <table id="ijm58" class="table table-hover">
+    <thead id="ixyfy-2">
+      <tr id="izckr">
+        <th>#
+        </th>
+        <th id="iimdl">Data
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor=" let template of templateList">
+        <td class="text-primary clickable ">{{template?.id}} </td>
+        <td class="clickable ">
+          <div class="template-view" [innerHtml]="template?.data?.html">
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div> -->

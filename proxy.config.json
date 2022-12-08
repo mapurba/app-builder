@@ -1,0 +1,76 @@
+{
+
+  "/api": {
+    "target": {
+      "host": "host.docker.internal",
+      "protocol": "http:",
+      "port": 80
+    },
+    "ws": true,
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/auth": {
+    "target": {
+      "host": "host.docker.internal",
+      "protocol": "http:",
+      "port": 80
+    },
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/app": {
+    "target": {
+      "host": "host.docker.internal",
+      "protocol": "http:",
+      "port": 80
+    },
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/code": {
+    "target": {
+      "host": "164.99.91.32:443",
+      "protocol": "https:"
+    },
+    "ws": true,
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/static": {
+    "target": {
+      "host": "host.docker.internal",
+      "port": 80,
+      "protocol": "http:"
+    },
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/dashboard.5815ba0656b5c7f13df6.css": {
+    "target": {
+      "host": "host.docker.internal",
+      "protocol": "http:",
+      "port": 80
+    },
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/dashboard*": {
+    "target": {
+      "host": "host.docker.internal",
+      "protocol": "http:",
+      "port": 80
+    },
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+
+
+}

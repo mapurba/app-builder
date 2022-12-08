@@ -1,0 +1,96 @@
+.iam-page-instructions {
+    color: grey;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+#placeholder {
+    align-items: center;
+    border: 1px solid #dae1e1;
+    border-radius: 5px;
+    display: flex;
+    height: 175px;
+    justify-content: center;
+    margin-bottom: 15px;
+    max-width: 75%;
+}
+
+.iam-search {
+    width: 250px;
+}
+
+.view-filters {
+    position: absolute;
+    right: 0px;
+    top: 2px;
+}
+
+#smallTile .iam-tile {
+    width: 85px;
+    height: 80px;
+    box-sizing: content-box;
+
+    > .ias-icon {
+        font-size: 40px;
+    }
+
+    > .tile-image {
+        height: 41px;
+        margin-bottom: 10px;
+    }
+
+    > .iam-tile-heading {
+        font-size: 14px;
+        line-height: 15px;
+        margin-bottom: 0px;
+    }
+
+    > .favorite-toggle {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        font-size: 20px;
+
+        &.ias-icon-favorite_outline_thin {
+            color: rgb(238, 242, 242);
+        }
+    }
+
+    > .not-fav {
+        color: rgb(238, 242, 242);
+    }
+
+    > .fav {
+        color: #007cd0;
+    }
+
+    &:hover {
+        > .favorite-toggle {
+            &.ias-icon-favorite_outline_thin {
+                color: rgb(189, 190, 192);
+            }
+        }
+    }
+}
+
+#largeTile .iam-tile {
+    width: 320px;
+    height: 200px;
+    box-sizing: content-box;
+
+    > .tile-image {
+        height: 61px;
+        margin-bottom: 10px;
+    }
+
+    > div + div {
+        font-size: 12px;
+        line-height: 15px;
+        color: #808080;
+        display: block;
+        max-height: 90px;
+        text-align: center;
+    }
+}

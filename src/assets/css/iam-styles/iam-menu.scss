@@ -1,0 +1,45 @@
+@import "iam-variables";
+
+.iam-menu {
+    background-color: $iam-dark-gray;
+    border: 1px solid transparent;
+    box-shadow: none;
+    border-radius: 3px;
+    color: $iam-light-gray;
+    padding: 5px 0;
+    margin: 2px 0 0;
+
+    > .ux-menu-item {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            background-color: $iam-darker-gray;
+            color: $iam-light-gray;
+        }
+
+        > .dropdown-menu-icon.ias-icon {
+            display: flex;
+            font-size: 1.6rem;
+        }
+
+        > .dropdown-menu-hint {
+            color: $iam-gray;
+        }
+
+    }
+
+    > ux-menu-divider {
+        border-bottom-color: $iam-medium-gray;
+    }
+
+    > h4 {
+        color: #bdbec0;
+        margin: 10px 15px;
+        cursor: default;
+    }
+
+    &.iam-complex-menu {
+        margin-left: 2px;
+    }
+}

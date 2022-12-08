@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --proxy-config proxy.config.json --host 0.0.0.0",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -14,16 +14,24 @@
     "@angular/common": "~12.2.0",
     "@angular/compiler": "~12.2.0",
     "@angular/core": "~12.2.0",
+    "@angular/elements": "^12.2.16",
     "@angular/forms": "~12.2.0",
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "@netiq/ias-bootstrap": "^1.0.0-beta.1",
+    "@ux-aspects/ux-aspects": "^4.0.0",
+    "angular-split": "^13.2.0",
+    "bootstrap": "^5.2.2",
+    "grapesjs": "^0.20.1",
+    "ng2-charts": "^2.3.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.2.11",
+    "@angular/cdk": "~12.2.13",
     "@angular/cli": "~12.2.11",
     "@angular/compiler-cli": "~12.2.0",
     "@types/jasmine": "~3.8.0",

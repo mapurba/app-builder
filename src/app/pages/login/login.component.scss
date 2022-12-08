@@ -1,0 +1,108 @@
+﻿/*! CSS Used from: http://localhost:7080/dashboard.5815ba0656b5c7f13df6.css */
+::-ms-clear{display:none;}
+/*! CSS Used from: Embedded */
+*,*::before,*::after{box-sizing:inherit;}
+/*! CSS Used from: Embedded */
+.MuiSvgIcon-root{fill:currentColor;width:1em;height:1em;display:inline-block;font-size:1.7142857142857142rem;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;flex-shrink:0;user-select:none;}
+/*! CSS Used from: Embedded */
+.MuiTypography-root{margin:0;}
+.MuiTypography-caption{font-size:12px;font-family:"Inter", sans-serif;font-weight:400;line-height:16px;}
+.MuiTypography-h1{font-size:72px;font-family:"Inter", sans-serif;font-weight:400;line-height:1.167;letter-spacing:-2px;}
+.MuiTypography-colorTextSecondary{color:#747474;}
+/*! CSS Used from: Embedded */
+.MuiTouchRipple-root{top:0;left:0;right:0;bottom:0;z-index:0;overflow:hidden;position:absolute;border-radius:inherit;pointer-events:none;}
+/*! CSS Used from: Embedded */
+.MuiButtonBase-root{color:inherit;border:0;cursor:pointer;margin:0;display:inline-flex;outline:0;padding:0;position:relative;align-items:center;user-select:none;border-radius:0;vertical-align:middle;-moz-appearance:none;justify-content:center;text-decoration:none;background-color:transparent;-webkit-appearance:none;-webkit-tap-highlight-color:transparent;}
+.MuiButtonBase-root::-moz-focus-inner{border-style:none;}
+/*! CSS Used from: Embedded */
+.MuiIconButton-root{flex:0 0 auto;color:#242424;padding:12px;overflow:visible;font-size:1.7142857142857142rem;text-align:center;transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;border-radius:50%;}
+.MuiIconButton-root:hover{background-color:rgba(36, 36, 36, 0.08);}
+@media (hover: none){
+.MuiIconButton-root:hover{background-color:transparent;}
+}
+.MuiIconButton-sizeSmall{padding:3px;font-size:1.2857142857142856rem;}
+.MuiIconButton-label{width:100%;display:flex;align-items:inherit;justify-content:inherit;}
+/*! CSS Used from: Embedded */
+.MuiInputBase-root{color:#000;cursor:text;display:inline-flex;position:relative;font-size:16px;background:#FFF;box-sizing:border-box;margin-top:12px;min-height:40px;align-items:center;font-family:"Inter", sans-serif;font-weight:400;line-height:1.1875em;border-radius:4px;}
+.MuiInputBase-fullWidth{width:100%;}
+.MuiInputBase-input{font:inherit;color:currentColor;width:100%;border:0;height:1.1875em;margin:0;display:block;padding:6px 0 7px;font-size:16px;min-width:0;background:none;box-sizing:content-box;animation-name:mui-auto-fill-cancel;-webkit-tap-highlight-color:transparent;}
+.MuiInputBase-input::-webkit-input-placeholder{color:currentColor;opacity:0.42;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}
+.MuiInputBase-input::-moz-placeholder{color:currentColor;opacity:0.42;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}
+.MuiInputBase-input:-ms-input-placeholder{color:currentColor;opacity:0.42;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}
+.MuiInputBase-input::-ms-input-placeholder{color:currentColor;opacity:0.42;transition:opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}
+.MuiInputBase-input:focus{outline:0;}
+.MuiInputBase-input:invalid{box-shadow:none;}
+.MuiInputBase-input:-webkit-autofill{animation-name:mui-auto-fill;animation-duration:5000s;}
+.MuiInputBase-input::placeholder{color:#747474;opacity:1;}
+/*! CSS Used from: Embedded */
+.jss26{top:-5px;left:0;right:0;bottom:0;margin:0;padding:0;position:absolute;border-style:solid;border-width:1px;padding-left:8px;border-radius:inherit;pointer-events:none;}
+.jss27{padding:0;text-align:left;transition:width 150ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;line-height:11px;}
+/*! CSS Used from: Embedded */
+.MuiOutlinedInput-root{position:relative;font-size:14px;border-radius:4px;}
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline{border-color:#000;}
+@media (hover: none){
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline{border-color:rgba(0, 0, 0, 0.23);}
+}
+.MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline{border-color:#DD4764;}
+.MuiOutlinedInput-adornedEnd{padding-right:14px;}
+.MuiOutlinedInput-notchedOutline{border-color:#DDE2EC;border-width:1px;}
+.MuiOutlinedInput-input{padding:18.5px 14px;}
+.MuiOutlinedInput-input:-webkit-autofill{border-radius:inherit;}
+.MuiOutlinedInput-inputAdornedEnd{padding-right:0;}
+/*! CSS Used from: Embedded */
+.MuiButton-root{color:#000;padding:6px 16px;font-size:13px;min-width:64px;box-sizing:border-box;min-height:40px;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-family:"Inter", sans-serif;font-weight:500;line-height:1.75;padding-left:20px;border-radius:4px;padding-right:20px;letter-spacing:1.5px;text-transform:uppercase;}
+.MuiButton-root:hover{text-decoration:none;background-color:rgba(0, 0, 0, 0.08);}
+@media (hover: none){
+.MuiButton-root:hover{background-color:transparent;}
+}
+.MuiButton-label{width:100%;display:inherit;align-items:inherit;justify-content:inherit;}
+.MuiButton-contained{color:#FFF;box-shadow:0 2px 2px rgba(0, 23, 121, 0.08);background-color:#747474;}
+.MuiButton-contained:hover{box-shadow:0 4px 10px rgba(29, 64, 126, 0.24);background-color:rgb(87, 87, 87);}
+.MuiButton-contained:active{box-shadow:0 8px 18px rgba(29, 64, 126, 0.28);}
+@media (hover: none){
+.MuiButton-contained:hover{box-shadow:0 2px 6px rgba(29, 64, 126, 0.22);background-color:#e0e0e0;}
+}
+.MuiButton-containedPrimary{color:#FFF;box-shadow:0 2px 2px rgba(0, 23, 121, 0.08);background-color:#0073e7;}
+.MuiButton-containedPrimary:hover{background-color:#0073e7;}
+@media (hover: none){
+.MuiButton-containedPrimary:hover{background-color:#0073e7;}
+}
+.MuiButton-fullWidth{width:100%;}
+/*! CSS Used from: Embedded */
+.jss31{position:relative;}
+/*! CSS Used from: Embedded */
+.jss35{text-align:center;margin-bottom:40px;}
+.jss36{margin:2px;background-color:#F3F3F3;}
+.jss37{margin:2px;background-color:#F3F3F3;}
+/*! CSS Used from: Embedded */
+.MuiInputAdornment-root{height:0.01em;display:flex;max-height:2em;align-items:center;white-space:nowrap;}
+.MuiInputAdornment-root .MuiSvgIcon-root{color:#747474;}
+.MuiInputAdornment-positionEnd{margin-left:8px;}
+/*! CSS Used from: Embedded */
+.jss22{display:flex;justify-content:center;}
+.jss23{color:#000;width:80px;height:56px;}
+.jss24{font-size:24px;margin-top:48px;text-align:center;margin-bottom:24px;letter-spacing:-0.3px;}
+/*! CSS Used from: Embedded */
+.MuiFormControl-root{border:0;margin:0;display:inline-flex;padding:0;z-index:0;position:relative;min-width:0;flex-direction:column;vertical-align:top;}
+.MuiFormControl-fullWidth{width:100%;}
+/*! CSS Used from: Embedded */
+.MuiFormHelperText-root{color:#747474;margin:0;font-size:12px;margin-top:3px;text-align:left;font-family:"Inter", sans-serif;font-weight:400;line-height:16px;}
+.MuiFormHelperText-root.Mui-error{color:#DD4764;}
+.MuiFormHelperText-contained{margin-top:6px;margin-left:4px;margin-right:14px;}
+/*! CSS Used from: Embedded */
+.jss30{font-size:20px;}
+/*! CSS Used from: Embedded */
+.jss14{margin:auto;max-width:320px;min-width:320px;    margin-top: 5%;
+}
+/*! CSS Used from: Embedded */
+.jss20{margin-top:16px;}
+/*! CSS Used keyframes */
+
+.jss7{
+    position: absolute;
+    z-index: 9999999;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    top: 0;
+}

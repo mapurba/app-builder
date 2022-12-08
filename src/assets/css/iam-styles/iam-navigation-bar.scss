@@ -1,0 +1,88 @@
+@import "../iam-styles/iam-variables";
+
+.iam-navigation-bar,
+ux-navigation.iam-navigation-bar {
+    display: block;
+    list-style: none;
+    min-width: 250px;
+    overflow: auto;
+    padding: 25px 10px 25px 15px;
+
+    > li {
+        border-radius: 3px;
+        color: $iam-dim-gray;
+        cursor: pointer;
+        font-size: 15px;
+        display: block;
+        padding: 8px 10px;
+        white-space: nowrap;
+
+        &:hover {
+            background-color: $iam-panel-gray;
+        }
+
+        &.selected {
+            background-color: $iam-panel-gray;
+            color: $iam-dark-gray;
+            font-weight: bold;
+        }
+
+        &:focus {
+            outline: 0 none;
+        }
+    }
+}
+
+// TODO: Integrate with Examples page and add iam- class
+.ux-side-nav {
+    .nav > li {
+        > a {
+            border-radius: 3px;
+            color: $iam-dim-gray;
+            font-size: 15px;
+            font-weight: normal;
+            padding: 8px 10px;
+            line-height: 1.2em;
+
+            // Keeps things looking right when icons are present
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                background-color: $iam-panel-gray;
+                color: $iam-dark-gray;
+            }
+
+            > .nav-icon + .nav-title {
+                margin-left: 10px;
+            }
+
+            > span {
+                display: flex;
+                align-items: center;
+
+                > .nav-icon + .nav-title {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        &.active > a {
+            background-color: $iam-panel-gray;
+            color: $iam-dark-gray;
+            font-weight: 600;
+            letter-spacing: 0.25px;
+        }
+    }
+}
+
+// .iam-content-with-nav {
+//     display: grid;
+//     grid-template-columns: 260px 1fr;
+//     overflow: auto;
+
+//     > :not(ux-navigation):not(router-outlet) {
+//         overflow: auto;
+//         padding: 25px;
+//     }
+// }

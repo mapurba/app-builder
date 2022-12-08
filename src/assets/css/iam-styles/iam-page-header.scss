@@ -1,0 +1,120 @@
+@import "./iam-variables";
+
+$header-bar-height: 50px;
+$nav-bar-height: 38px;
+
+.iam-page-header {
+    min-width: 0; // This fixes problems with text truncation.  See: https://css-tricks.com/flexbox-truncated-text/
+
+    > .iam-header-bar {
+        display: flex;
+        align-items: center;
+
+        background-color: $microfocus-primary;
+        color: white;
+        height: $header-bar-height;
+        margin: 0;
+        padding: 0;
+
+        > .iam-header-bar_logo {
+            display: flex;
+        }
+
+        > .iam-header-bar_title {
+            flex-grow: 1;
+            font-size: 20px;
+            margin-left: 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        > .iam-header-bar_menu {
+            margin-right: 15px;
+            position: relative;
+
+            > a {
+                color: white;
+                display: flex;
+                align-items: center;
+
+                > .ias-icon {
+                    font-size: 16px;
+                    margin-left: 5px;
+                }
+            }
+
+            > .dropdown-menu {
+                overflow: hidden;
+
+                // This is a fix for the ux-aspects style overriding the dropdown-menu-right style:
+                &.dropdown-menu-right {
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    > .iam-header-bar_username {
+        display: flex;
+        align-items: center;
+
+        cursor: pointer;
+        font-size: 14px;
+        margin-right: 15px;
+
+        > i {
+            margin-top: 4px;
+            margin-left: 4px;
+        }
+    }
+
+    > .iam-nav-bar {
+        background-color: $iam-panel-gray;
+        color: $iam-dim-gray;
+        font-size: .95rem;
+        height: $nav-bar-height;
+        padding: 0 15px;
+
+        display: flex;
+        align-items: center;
+
+        > ul {
+            display: flex;
+            align-items: center;
+
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            > li {
+                display: inline-block;
+
+                > a {
+                    border-width: 0 1px 3px;
+                    border-style: solid;
+                    border-color: transparent;
+                    color: inherit;
+                    height: $nav-bar-height;
+                    padding: 0 10px;
+
+                    display: flex;
+                    align-items: center;
+
+                    &:hover {
+                        background-color: $iam-border-gray;
+                    }
+
+                    &.active {
+                        color: $iam-dark-gray;
+                        border-left-color: $iam-border-gray;
+                        border-right-color: $iam-border-gray;
+                        border-bottom-color: $iam-blue-4;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

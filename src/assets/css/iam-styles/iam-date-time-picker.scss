@@ -1,0 +1,90 @@
+@import "iam-variables";
+
+.iam-date-time-picker {
+    ux-date-time-picker-header .header .header-title {
+        font-weight: 400;
+        &:hover {
+            background-color: transparent;
+            color: $iam-blue-3;
+        }
+    }
+
+    ux-date-time-picker-day-view .calendar .date-cell {
+        padding: 5px;
+    }
+
+    ux-date-time-picker-day-view .calendar .weekday {
+        font-weight: 400;
+        background-color: $iam-panel-gray;
+    }
+
+    ux-date-time-picker-day-view .calendar .date-button.current,
+    ux-date-time-picker-day-view .calendar .date-button.current.preview {
+        background-color: $iam-border-gray;
+    }
+
+    ux-date-time-picker-year-view .calendar .calendar-row .calendar-item,
+    ux-date-time-picker-month-view .calendar .calendar-row .calendar-item,
+    ux-date-time-picker-day-view .calendar .date-button {
+        border: 1px solid transparent;
+        border-radius: 2px;
+        height: 30px;
+        width: 30px;
+
+        &:hover {
+            background-color: transparent;
+            border-color: $iam-blue-3;
+            color: $iam-blue-3;
+        }
+
+        &.active:not(.date-button.current) {
+            background-color: transparent;
+        }
+
+        &.active {
+            color: $iam-blue-3;
+            border-color: $iam-blue-3;
+            font-weight: bold;
+        }
+    }
+
+    ux-time-picker {
+        .btn {
+            border-radius: 3px;
+        }
+
+        .time-picker-meridian {
+            .btn-group {
+                display: flex;
+
+                .button-toggle-accent:active, .button-toggle-accent.active {
+                    background-color: $iam-border-gray;
+                    border-color: #ccc;
+                    box-shadow: none;
+                    color: $iam-dark-gray;
+                }
+            }
+        }
+
+        .time-zone-picker {
+            .form-control {
+                border-radius: 3px;
+            }
+        }
+    }
+
+    .now-button {
+        &:hover:not(:disabled) {
+            background-color: transparent;
+            color: $iam-blue-3;
+        }
+    }
+}
+
+.date-time-picker-popover {
+    max-width: none;
+
+    & .popover-content {
+        padding: 0;
+    }
+}

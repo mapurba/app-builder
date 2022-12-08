@@ -1,0 +1,61 @@
+<div id="i5q2a" class="gjs-row">
+  <div id="i7ymw" class="gjs-cell" [ngClass]="expand?'i7ymw-maxmize':'i7ymw-minmize'">
+    <div class="action-icons" [hidden]="expand">
+      <button type="button" class="btn iam-btn btn-icon " (click)="expand=true;">
+        <ux-icon name="template" size="36px">
+        </ux-icon>
+      </button>
+    </div>
+    <div class="list" [hidden]="!expand">
+      <div id="ic65i">Templates 
+        <span></span>
+        <div>
+          <div id="iyxnk">
+            <button type="button" class="btn iam-btn btn-icon" (click)="addNew()">
+              <ux-icon name="add">
+              </ux-icon>
+            </button>
+            <button type="button" class="btn iam-btn btn-icon" (click)="refresh()">
+              <ux-icon name="refresh">
+              </ux-icon>
+            </button>
+          </div>
+        </div>
+        <div id="ijegf" style="margin-left:auto;">
+          <button type="button" class="btn iam-btn btn-icon" (click)="expand=!expand">
+            <ux-icon name="chevron-left">
+            </ux-icon>
+          </button>
+        </div>
+      </div>
+      <table id="ijm58" class="table table-hover">
+        <thead id="ixyfy-2">
+          <tr id="izckr">
+            <th>#
+            </th>
+            <th id="iimdl">Data
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor=" let template of templateList" (click)="openTemplateForEdit(template)"
+            [ngClass]="{'table-active':template?.id==selectedtemplate?.id}">
+            <td class="text-primary clickable ">{{template?.id}} </td>
+            <td class="clickable ">
+              <div class="template-view" [innerHtml]="template?.data?.html">
+                 
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+
+  <div id="imav8" class="gjs-cell" [ngClass]="expand?'imav8-shrink':'imav8-maxmize'">
+    <app-editor [templateObject]="selectedtemplate" *ngIf="!loading" (htmlContent)="cssContentEvent($event)"
+      (cssContent)="cssContentEvent($event)" (templateObjectChange)="templateChangeEvent($event)"></app-editor>
+  </div>
+</div>

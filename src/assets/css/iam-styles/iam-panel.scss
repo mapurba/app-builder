@@ -1,0 +1,53 @@
+@import "iam-variables";
+
+.iam-panel {
+    margin-bottom: 20px;
+    background-color: $iam-panel-gray;
+    border-color: $iam-panel-gray;
+    border-radius: 3px;
+
+    .panel-heading {
+        background: transparent;
+        border-bottom: 1px solid transparent;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 15px 15px 5px;
+    }
+
+    h4.panel-title {
+        color: $iam-medium-gray;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .panel-body {
+        padding: 15px;
+    }
+
+    .panel-footer {
+        color: $iam-medium-gray;
+        font-size: 14px;
+        margin: 0 15px 15px;
+        padding: 10px 0 0;
+        background: transparent;
+        border-top: 1px solid $iam-border-gray;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    // Used when reordering panels:
+    &.cdk-drag-placeholder {
+        border: 3px dashed #01a9e7;
+        background-color: transparent;
+
+        > * {
+            visibility: hidden;
+        }
+
+        opacity: 1;
+    }
+
+    &.cdk-drag-preview {
+        opacity: 0.5;
+    }
+}

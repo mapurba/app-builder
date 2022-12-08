@@ -1,0 +1,113 @@
+/* We can remove the border we've set at the beginnig */
+
+
+
+
+::ng-deep .gjs-cv-canvas {
+  // width: 100% !important;
+}
+
+::ng-deep .gjs-pn-devices-c {
+  display: none !important;
+}
+
+
+.gjs-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  padding: 10px;
+  height: calc(100vh - 58px);
+}
+
+.gjs-cell {
+  min-height: 75px;
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+#i7ymw {
+  flex-basis: 30.35%;
+  border: 1px solid #d3c5c5;
+}
+
+#imav8 {
+  flex-basis: 70%;
+  float: none;
+}
+
+#i5q2a {
+  height: 100vh;
+  padding: 0 0 0 0;
+}
+
+#iyxnk {
+  display: flex;
+}
+
+#ijegf {
+  margin: 0 0 0 auto;
+}
+
+#ic65i {
+  padding: 10px;
+  display: flex;
+  padding-right: 0;
+  align-items: baseline;
+  font-weight: 700;
+  font-family: Helvetica, sans-serif;
+  position: relative;
+  display: flex;
+  flex: 0 0 auto;
+  border: 1px solid #d3c5c5;
+}
+
+#i46ph {
+  margin: 0 0 0 0;
+  padding: 2px 2px 2px 2px;
+}
+
+#ij1wv {
+  position: absolute;
+  right: 0;
+  padding: 0 8px 0 8px;
+}
+
+@media (max-width: 768px) {
+  .gjs-row {
+    flex-wrap: wrap;
+  }
+}
+
+
+.i7ymw-minmize {
+  flex-basis: 2% !important;
+  border: 1px solid #d3c5c5;
+  overflow: hidden;
+}
+
+.i7ymw-maxmize {
+  flex-basis: 15% !important;
+  border: 1px solid #d3c5c5;
+}
+
+.imav8-maxmize {
+  flex-basis: 97% !important;
+  float: none;
+}
+
+.imav8-shrink {
+  flex-basis: 80% !important;
+  float: none;
+}
+
+.action-icons {
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+}
+.template-view{
+  max-height: 200px;
+  overflow: hidden;
+}

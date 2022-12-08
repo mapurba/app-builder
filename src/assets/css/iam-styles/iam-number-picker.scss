@@ -1,0 +1,22 @@
+@import "iam-variables";
+
+ux-number-picker.iam-number-picker {
+    .form-control {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+
+        &:focus {
+            border-color: $iam-blue-4;
+        }
+    }
+
+    .number-picker-controls {
+        .number-picker-control-up {
+            border-top-right-radius: 3px;
+        }
+
+        .number-picker-control-down {
+            border-bottom-right-radius: 3px;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+<div class="container-fluid">
+  <div class="iam-header-action-buttons">
+    <div class="iam-search">
+      <span class="ias-icon ias-icon-search_thick ux-icon ux-icon-search"></span>
+      <input class="form-control iam-input" type="text" placeholder="Search">
+      <button type="button" class="btn iam-btn  btn-icon ">
+        <ux-icon name="close"></ux-icon>
+      </button>
+    </div>
+
+    <div class="iam-action-buttons view-filters">
+      <div type="button" class="btn iam-btn btn-link btn-icon " title="View Favorite Applications">
+        <ux-icon name="star"></ux-icon>
+        <!-- <span class="ias-icon ias-icon-favorite_outline_thin"></span> -->
+      </div>
+      <div type="button" class="btn iam-btn btn-link btn-icon " title="View All Applications">
+        <span class="ias-icon ias-icon-view_tile_thick ias-icon-color-blue"></span>
+      </div>
+      <div type="button" class="btn iam-btn btn-link btn-icon " title="Configure View">
+        <span class="ias-icon ias-icon-configure_thin"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="iam-tile-grid">
+      <div class="iam-tile" [routerLink]="'template'">
+        <div class="tile-image">
+          <ux-icon name="template"></ux-icon>
+        </div>
+        <div class="iam-tile-heading">Template Builder</div>
+        <div class="iam-tile-text">Build Template and store for reuse</div>
+      </div>
+      <div class="iam-tile" [routerLink]="'coder'">
+        <div class="tile-image">
+          <ux-icon name="app"></ux-icon>
+        </div>
+        <div class="iam-tile-heading">App Builder</div>
+        <div class="iam-tile-text">Create Many Angular Application</div>
+      </div>
+      <div class="iam-tile" [routerLink]="'workspace'">
+        <div class="tile-image">
+          <ux-icon name="app"></ux-icon>
+        </div>
+        <div class="iam-tile-heading">Work space </div>
+        <div class="iam-tile-text">Create Many ubuntu Angular Application</div>
+      </div>
+      <div class="iam-tile" [routerLink]="'code-editor'">
+        <div class="tile-image">
+          <ux-icon name="app"></ux-icon>
+        </div>
+        <div class="iam-tile-heading">Code Editor </div>
+        <div class="iam-tile-text">Create Many ubuntu Angular Application</div>
+      </div>
+    </div>
+   
+  </div>
+</div>

@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@ux-aspects/ux-aspects/styles/ux-aspects.css";
+@import "~@netiq/ias-bootstrap/dist/ias-bootstrap.css";
+@import "./assets/css/iam-styles/iam-all.scss";
+@import '~grapesjs/dist/css/grapes.min.css';
+
+.gjs-one-bg {
+    background-color: #ffffff !important;
+}
+
+.gjs-two-color {
+    color: #212529 !important;
+}
+
+#gjs {
+    border: none !important;
+    border-left: 1px solid grey !important;
+}
+
+.editor-container {
+    padding: 4px;
+}

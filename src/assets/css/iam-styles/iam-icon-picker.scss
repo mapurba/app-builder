@@ -1,0 +1,89 @@
+@import "iam-variables";
+
+.iam-icon-picker {
+    width: 254px;
+    display: inline-block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 3px;
+    margin: 0px 8px 0px 8px;
+    padding: 2px;
+
+    > .ux-menu-item {
+        display: inline-flex;
+        width: 50px;
+        justify-content: center;
+        padding: 12px 20px;
+        border-radius: 3px;
+        border: 1px solid transparent;
+
+        &:hover {
+            background-color: #f6f9f8;
+            border-color: #dae1e1;
+        }
+
+        > .ias-icon {
+            font-size: 30px;
+        }
+    }
+}
+
+.selected-icon {
+    margin-right: 5px;
+}
+
+.iam-select-menu {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: none;
+    border-radius: 3px;
+    color: black;
+    padding: 5px 0;
+    margin: 2px 0 0;
+}
+
+.icon-name-holder {
+    margin: 4px 8px 8px 8px;
+}
+
+.use-btn-container {
+    margin-left: 8px;
+}
+
+.use-btn {
+    width: fit-content;
+}
+
+.more-icons {
+    display: flex;
+    align-items: center;
+    line-height: 25px;
+    padding: 6px 20px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+
+    .dropdown-menu-text {
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .dropdown-menu-right {
+        text-align: right;
+    }
+
+    .dropdown-menu-hint {
+        font-size: 80%;
+        margin-left: 16px;
+        color: #bdbec0;
+    }
+
+    &:hover {
+        background-color: #1f1f1f;
+        color: #f6f9f8;
+    }
+}

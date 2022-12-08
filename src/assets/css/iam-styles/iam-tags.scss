@@ -1,0 +1,88 @@
+@import 'iam-variables';
+
+ux-tag-input {
+  border-color: $iam-border-gray;
+  border-radius: 3px;
+  cursor: default;
+
+  &:focus, &:hover, &.focus {
+    border-color: $iam-blue-4;
+  }
+
+    > ol > li.ux-tag {
+        align-items: center;
+        background-color: $iam-panel-gray;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        font-size: 12px;
+        justify-content: space-around;
+        line-height: 22px;
+        margin: 2px 3px;
+        min-width: 70px;
+        padding: 0 5px;
+    }
+}
+
+ux-tag-input.disabled, ux-dropdown.disabled {
+  background-color: transparent;
+  border-color: $iam-border-gray;
+  opacity: 0.60;
+  outline: none;
+
+  &:focus, &:hover {
+    border-color: $iam-border-gray;
+  }
+}
+
+.ux-tag {
+  align-items: center;
+  background-color: $iam-panel-gray;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  font-size: 12px;
+  justify-content: space-around;
+  line-height: 22px;
+  margin: 2px 3px;
+  min-width: 70px;
+  padding: 0 5px;
+
+  >.ux-tag-remove {
+    flex: 0 0 auto;
+    opacity: 0.7;
+    background-color: transparent;
+    border: none;
+    padding: 0px 0px 0px 10px;
+    outline: none;
+    margin: 0px;
+
+    > .ias-icon {
+        font-size: 20px;
+    }
+  }
+
+  &:focus, &:hover {
+    background-color: $iam-light-gray;
+    border: 1px solid $iam-blue-4;
+    color: $iam-blue-4;
+  }
+  &.disabled {
+    background-color: $iam-panel-gray;
+    border: 1px solid transparent;
+    color: $iam-dark-gray;
+    outline: none;
+  }
+}
+.tag-container > ol > li.ux-tag {
+  &:focus, &:hover {
+    background-color: #f6f9f8;
+    border: 1px solid #01a9e7;
+    color: #01a9e7;
+  }
+  &.disabled {
+    cursor: not-allowed
+  }
+}

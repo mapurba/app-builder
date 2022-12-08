@@ -1,0 +1,183 @@
+@import "iam-variables";
+@import "iam-btn";
+
+ux-wizard.iam-wizard {
+    .wizard-body {
+        .wizard-steps {
+            .wizard-step {
+                background-color: $iam-light-gray;
+                border: 1px solid $iam-border-gray;
+                border-radius: 3px;
+                color: $iam-dark-gray;
+                opacity: 0.5;
+
+                &.visited {
+                    background-color: $iam-light-gray;
+                    color: $iam-dark-gray;
+                    opacity: 1;
+
+                    &:hover {
+                        border: 1px solid $iam-blue-4;
+                        color: $iam-blue-4;
+                    }
+                }
+
+                &.active {
+                    background-color: $iam-white;
+                    border: 2px solid $iam-blue-4;
+                    font-weight: 600;
+
+                    &:hover {
+                        border: 2px solid $iam-blue-4;
+                        color: $iam-blue-4;
+                    }
+                }
+            }
+        }
+
+        .wizard-content {
+            border-radius: 3px;
+            background-color: $iam-panel-gray;
+        }
+    }
+
+    .wizard-footer {
+        justify-content: flex-start;
+        margin: 0;
+
+        .btn {
+            margin: 15px 5px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 3px;
+            font-family: $iam-font-family;
+            font-size: 0.95rem;
+            text-transform: none;
+
+            &:first-child {
+                &::before {
+                    content: "\E90C";
+                    font-family: "ias-icons";
+                    padding-right: 5px;
+                }
+
+                + .btn::after {
+                    content: "\E90E";
+                    font-family: "ias-icons";
+                    padding-left: 5px;
+                }
+            }
+
+            &:last-of-type {
+                margin-left: 20px;
+            }
+
+            &.button-primary, &.button-secondary {
+                background-color: $iam-light-gray;
+                border: 1px solid $iam-border-gray;
+                color: $iam-dark-gray;
+            }
+
+            // Remove the outline that shows when the element has focus:
+            &:focus,
+            &.focus,
+            &:active:focus,
+            &:active.focus,
+            &.active:focus,
+            &.active.focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+        }
+    }
+}
+
+ux-marquee-wizard {
+    .marquee-wizard-side-panel {
+        background-color: $iam-blue-2;
+
+        .marquee-wizard-description-container {
+            align-items: center;
+            display: flex;
+            font-size: 20px;
+            padding: 25px 20px 20px 20px;
+
+            .ias-icon {
+                font-size: 35px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .marquee-wizard-content-panel {
+        border-radius: 5px;
+
+        .marquee-wizard-content {
+            padding: 25px;
+        }
+
+        .modal-footer {
+            display: inline-flex;
+            padding: 25px;
+
+            .btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                border-radius: 3px;
+                font-family: $iam-font-family;
+                font-size: 0.95rem;
+                text-transform: none;
+                margin: 15px 5px 0 0;
+
+                &:first-child {
+                    &::before {
+                        content: "\E90C";
+                        font-family: "ias-icons";
+                        padding-right: 5px;
+                    }
+
+                    + .btn::after {
+                        content: "\E90E";
+                        font-family: "ias-icons";
+                        padding-left: 5px;
+                    }
+                }
+
+                &:last-of-type {
+                    margin-left: 20px;
+                }
+
+                &.button-primary, &.button-secondary {
+                    background-color: $iam-light-gray;
+                    border: 1px solid $iam-border-gray;
+                    color: $iam-dark-gray;
+                }
+
+                // Remove the outline that shows when the element has focus:
+                &:focus,
+                &.focus,
+                &:active:focus,
+                &:active.focus,
+                &.active:focus,
+                &.active.focus {
+                    outline: none !important;
+                    box-shadow: none !important;
+                }
+            }
+        }
+    }
+}
+.marquee-modal-window {
+    .modal-dialog .modal-content {
+        border-radius: 5px;
+
+        .dismiss {
+            right: 25px;
+            top: 25px;
+        }
+    }
+}
